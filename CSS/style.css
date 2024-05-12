@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Protest+Riot&family=Roboto+Slab&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 20px;
+}
+
+.navBar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    /*position: fixed;*/
+}
+
+.logo {
+    width: 30%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid pink;
+}
+
+.logo img {
+    width: 45px;
+}
+
+.logo a {
+    text-decoration: none;
+    display: flex;
+}
+
+.logo h1 {
+    font-family: "Protest Riot", sans-serif;
+}
+
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    margin-right: 10%;
+    text-align: right;
+    justify-content: right;
+}
+
+.menu-item {
+    display: flex;
+    text-decoration: none;
+    padding: 15px 12px;
+    border: 1px solid green;
+}
+
+.day-promocao-area {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    margin-bottom: 30px;
+    background-image: url("../img/imagem-exemplo-promocao.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.desc-promocao {
+    width: 50%;
+    margin-right: 10%;
+    text-align: center;
+    border: 1px solid orange;
+}
+
+#cardapio{
+    width: 80%;
+    margin: auto;
+    border: 1px solid purple;
+}
+
+.opcoes-cardapio {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    border: 1px solid;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.opcoes-cardapio div {
+    width: 18%;
+    align-items: center;
+    border: 1px solid orange;
+}
+
+.opcoes-cardapio * {
+    text-align: center;
+    font-size: 12px;
+}
+
+.opcoes-cardapio .material-symbols-outlined {
+    width: 100%;
+    font-size: 50px;
+}
+
+.section{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 26%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
+    border: 2px solid;
+}
+.card img{
+    width: 100%;
+    margin: auto;
+    filter: drop-shadow(10px 7px 10px black);
+}
+
+.nome{
+    font-size: 20px !important;
+    font-weight: bold
+}
+
+.card p{
+    font-size: 12px;
+    margin: 0;
+}
