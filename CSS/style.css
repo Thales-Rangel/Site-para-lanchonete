@@ -26,7 +26,7 @@ h6 {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    background-color: white;
     /*position: fixed;*/
 }
 
@@ -36,16 +36,10 @@ h6 {
     display: flex;
     justify-content: center;
     text-align: center;
-    border: 1px solid pink;
 }
 
 .logo img {
     width: 45px;
-}
-
-.logo a {
-    text-decoration: none;
-    display: flex;
 }
 
 .logo h1 {
@@ -65,7 +59,7 @@ h6 {
     display: flex;
     text-decoration: none;
     padding: 15px 12px;
-    border: 1px solid green;
+    color: black;
 }
 
 .day-promocao-area {
@@ -76,28 +70,32 @@ h6 {
     background-image: url("../img/imagem-exemplo-promocao.png");
     background-repeat: no-repeat;
     background-size: contain;
+    width: 100%;
+    height: 500px;
+
+    border: 2px solid red;
 }
 
 
 .desc-promocao {
     width: 50%;
+    margin: auto;
     margin-right: 10%;
     text-align: center;
-    border: 1px solid orange;
+
+    border: 1px solid green;
 }
 
 #cardapio{
     width: 80%;
     margin: auto;
     text-align: center;
-    border: 1px solid purple;
 }
 
 .opcoes-cardapio {
     display: flex;
     width: 70%;
     margin: auto;
-    border: 1px solid;
     justify-content: space-evenly;
     margin-bottom: 20px;
 }
@@ -105,7 +103,29 @@ h6 {
 .opcoes-cardapio div {
     width: 18%;
     align-items: center;
-    border: 1px solid orange;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.opcoes-cardapio div::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(246, 55, 12);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.opcoes-cardapio  div:hover::after{
+    width: 100%;
+    /*Isso está aqui para efeitos visuais imediatos, mas só será feito no JavaScript quando o mouse clicar no elemento*/
+}
+
+.opcoes-cardapio div:hover{
+    color: rgb(246, 55, 12);
+    cursor: pointer;
 }
 
 .opcoes-cardapio * {
@@ -127,7 +147,6 @@ h6 {
 
 .section img{
     width: 40%;
-    border: 1px solid;
 }
 
 .card{
@@ -136,7 +155,6 @@ h6 {
     align-items: center;
     justify-content: center;
     margin-bottom: 3%;
-    border: 2px solid;
 }
 
 .card img{
@@ -155,21 +173,51 @@ h6 {
     margin: 0;
 }
 
-.promocoes {
+#promocoes {
     width: 80%;
     margin: auto;
     text-align: center;
-    border: 1px solid ;
 }
 
 .dias-semana{
     display: flex;
     width: 70%;
     margin: auto;
+    align-items: center;
     justify-content: space-evenly;
     margin-bottom: 20px;
-    border: 2px solid red;
 }
+
+.dias-semana div{
+    display: flex;
+    width: 13%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.dias-semana div::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(246, 55, 12);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.dias-semana div:hover::after{
+    width: 100%;
+    /*Isso está aqui para efeitos visuais imediatos, mas só será feito no JavaScript quando o mouse clicar no elemento*/
+}
+
+.dias-semana div:hover{
+    color: rgb(246, 55, 12);
+    cursor: pointer;
+}
+
 
 .desc{
     width: 60%;
@@ -180,9 +228,42 @@ h6 {
 footer{
     margin-top: 50px;
     text-align: center;
-    border-top: 3px solid;
+    border-top: 10px solid rgb(106, 5, 5);
+    background-color: rgb(246, 55, 12);
+    color: white;
 }
 
 footer .logo{
     margin: auto;
+}
+
+footer .logo h1{
+    font-size: 35px;
+}
+
+footer .logo img{
+    width: 60px;
+}
+
+footer a{
+    color: white;
+}
+
+#copyright{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgb(106, 5, 5);
+}
+
+#copyright p{
+    width: 85%;
+}
+
+#copyright a{
+    width: 15%;
+    text-decoration: none;
+    text-align: center;
+
 }
