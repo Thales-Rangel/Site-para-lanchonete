@@ -255,15 +255,11 @@ footer a{
     align-items: center;
     justify-content: center;
     border-top: 1px solid rgb(106, 5, 5);
-}
-
-#copyright p{
-    width: 85%;
+    margin: auto;
 }
 
 #copyright a{
     width: 15%;
     text-decoration: none;
     text-align: center;
-
 }
