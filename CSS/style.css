@@ -62,18 +62,16 @@ h6 {
     color: black;
 }
 
-.day-promocao-area {
+#day-promocao-area {
     display: flex;
     flex-flow: row wrap;
     justify-content: right;
     margin-bottom: 30px;
-    background-image: url("../img/imagem-exemplo-promocao.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 80%;
+    background-position: center;
     width: 100%;
     height: 500px;
-
-    /*border: 2px solid red;*/
 }
 
 
@@ -82,6 +80,8 @@ h6 {
     margin: auto;
     margin-right: 10%;
     text-align: center;
+    color: white;
+    text-shadow: 10px 0 10px black;
 
     /*border: 1px solid green;*/
 }
@@ -118,11 +118,6 @@ h6 {
     transition: 0.5s ease-in-out;
 }
 
-.opcoes-cardapio  div:hover::after{
-    width: 100%;
-    /*Isso está aqui para efeitos visuais imediatos, mas só será feito no JavaScript quando o mouse clicar no elemento*/
-}
-
 .opcoes-cardapio div:hover{
     color: rgb(246, 55, 12);
     cursor: pointer;
@@ -138,8 +133,23 @@ h6 {
     font-size: 50px;
 }
 
+.selected {
+    color: red;
+}
+
+.opcoes-cardapio .selected::after{
+    content: " ";
+    width: 100%;
+    height: 3px;
+    background-color: rgb(246, 55, 12);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
 .section{
-    display: flex;
+    display: none;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
@@ -208,9 +218,14 @@ h6 {
     transition: 0.5s ease-in-out;
 }
 
-.dias-semana div:hover::after{
+.dias-semana .selected::after{
+    content: " ";
     width: 100%;
-    /*Isso está aqui para efeitos visuais imediatos, mas só será feito no JavaScript quando o mouse clicar no elemento*/
+    height: 3px;
+    background-color: rgb(246, 55, 12);
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .dias-semana div:hover{
