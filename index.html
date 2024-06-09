@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thales Lanches</title>
+    <title>Lanchonete do Dev</title>
 
     <link rel="shortcut icon" href="img/pizza_icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
@@ -17,7 +17,7 @@
     <nav class="navBar">
         <div class="logo">
             <img src="img/pizza_logo.png" alt="Thales Lanches">
-            <h1>Thales Lanches</h1>
+            <h1>Lanchonete do Dev</h1>
         </div>
 
         <div class="menu">
@@ -37,7 +37,7 @@
 
     <main>
 
-        <section class="day-promocao-area">
+        <section id="day-promocao-area">
             <div class="desc-promocao">
                 <h2>Promoção do dia</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolore eos ipsum quo commodi, eveniet
@@ -50,32 +50,34 @@
 
             <h2>Cardapio</h2>
 
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit cumque id aperiam itaque repellat pariatur blanditiis asperiores minima nostrum, maxime fugiat officia consequatur, assumenda qui dolorum. Impedit fuga voluptate cum.</p>
+
             <nav class="opcoes-cardapio">
-                <div>
+                <div class="selected" onclick="selectCardapio('sanduiches', this)">
                     <span class="material-symbols-outlined">
                         lunch_dining
                     </span>
                     Sanduiches
                 </div>
-                <div>
+                <div onclick="selectCardapio('pizza', this)">
                     <span class="material-symbols-outlined">local_pizza</span>
                     Pizzas
                 </div>
-                <div>
+                <div onclick="selectCardapio('lanches', this)">
                     <span class="material-symbols-outlined">fastfood</span>
                     Lanches
                 </div>
-                <div>
+                <div onclick="selectCardapio('bebidas', this)">
                     <span class="material-symbols-outlined">liquor</span>
                     Bebidas
                 </div>
-                <div>
+                <div onclick="selectCardapio('sorvetes', this)">
                     <span class="material-symbols-outlined">icecream</span>
                     Sorvetes
                 </div>
             </nav>
 
-            <div id="sanduiches" class="section">
+            <div id="sanduiches" class="section" style="display: flex;">
                 <div class="card">
                     <img src="img/burger_exemplo.png" alt="">
 
@@ -301,18 +303,20 @@
         <section id="promocoes">
             <h2>Promoções da semana</h2>
 
+            <p>Veja as diferentes promoções que temos durante a semana:</p>
+
             <nav class="dias-semana">
-                <div>Seg</div>
-                <div>Ter</div>
-                <div>Quar</div>
-                <div>Quin</div>
-                <div>Sex</div>
-                <div>Sab</div>
-                <div>Dom</div>
+                <div onclick="selectPromo('promo-Seg', this)">Seg</div>
+                <div onclick="selectPromo('promo-Ter', this)">Ter</div>
+                <div onclick="selectPromo('promo-Quar', this)">Quar</div>
+                <div onclick="selectPromo('promo-Quin', this)">Quin</div>
+                <div onclick="selectPromo('promo-Sex', this)">Sex</div>
+                <div onclick="selectPromo('promo-Sab', this)">Sab</div>
+                <div onclick="selectPromo('promo-Dom', this)">Dom</div>
             </nav>
 
             <div id="promo-Seg" class="section">
-                <img src="img/imagem-exemplo-promocao.png" alt="">
+                <img src="img/Promo-Seg.jpeg" alt="">
 
                 <div class="desc">
                     <h3>Promoção da Segunda</h3>
@@ -323,7 +327,7 @@
             </div>
 
             <div id="promo-Ter" class="section">
-                <img src="img/imagem-exemplo-promocao.png" alt="">
+                <img src="img/Promo-Ter.jpeg" alt="">
 
                 <div class="desc">
                     <h3>Promoção da Terça</h3>
@@ -334,7 +338,7 @@
             </div>
 
             <div id="promo-Quar" class="section">
-                <img src="img/imagem-exemplo-promocao.png" alt="">
+                <img src="img/Promo-Quar.jpeg" alt="">
 
                 <div class="desc">
                     <h3>Promoção da Quarta</h3>
@@ -345,7 +349,7 @@
             </div>
 
             <div id="promo-Quin" class="section">
-                <img src="img/imagem-exemplo-promocao.png" alt="">
+                <img src="img/Promo-Quin.jpeg" alt="">
 
                 <div class="desc">
                     <h3>Promoção da Quinta</h3>
@@ -356,7 +360,7 @@
             </div>
 
             <div id="promo-Sex" class="section">
-                <img src="img/imagem-exemplo-promocao.png" alt="">
+                <img src="img/Promo-Sex.jpeg" alt="">
 
                 <div class="desc">
                     <h3>Promoção da Sexta</h3>
@@ -367,7 +371,7 @@
             </div>
 
             <div id="promo-Sab" class="section">
-                <img src="img/imagem-exemplo-promocao.png" alt="">
+                <img src="img/Promo-Sab.jpeg" alt="">
 
                 <div class="desc">
                     <h3>Promoção do Sabádo</h3>
@@ -378,7 +382,7 @@
             </div>
 
             <div id="promo-Dom" class="section">
-                <img src="img/imagem-exemplo-promocao.png" alt="">
+                <img src="img/Promo-Dom.jpeg" alt="">
 
                 <div class="desc">
                     <h3>Promoção do Domingo</h3>
@@ -393,18 +397,23 @@
     <footer id="sobre">
         <div class="logo">
             <img src="img/pizza_logo.png" alt="Thales Lanches">
-            <h1>Thales Lanches</h1>
+            <h1>Lanchonete do Dev</h1>
         </div>
 
         <p>Site para uma lanchonete fictícia, usado para demonstração para o meu portfólio de programação.</p>
 
-        <p>Se desejar conhecer: <a href="thales-rangel.github.io/Thales-Rangel-Portifolio/">thales-rangel.github.io/Thales-Rangel-Portifolio/</a></p>
+        <p>Se desejar conhecer: <a
+                href="https://thales-rangel.github.io/Thales-Rangel-Portifolio/">thales-rangel.github.io/Thales-Rangel-Portifolio/</a>
+        </p>
 
         <div id="copyright">
             <p>© 2024 Thales Rangel. Todos os direitos reservados</p>
             <a href="#">Voltar ao topo ↺</a>
         </div>
     </footer>
+
+
+    <script src="JS/Script.js"></script>
 </body>
 
 </html>
