@@ -63,7 +63,6 @@ h6 {
 }
 
 #day-promocao-area {
-    padding-top: 70px;
     display: flex;
     flex-flow: row wrap;
     justify-content: right;
@@ -71,7 +70,6 @@ h6 {
     background-repeat: no-repeat;
     background-size: 95%;
     background-position: center;
-    background-attachment: fixed;
     width: 100%;
     height: 600px;
 }
@@ -88,7 +86,7 @@ h6 {
     /*border: 1px solid green;*/
 }
 
-#cardapio{
+#cardapio {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -109,7 +107,7 @@ h6 {
     padding-bottom: 3px;
 }
 
-.opcoes-cardapio div::after{
+.opcoes-cardapio div::after {
     content: " ";
     width: 0%;
     height: 3px;
@@ -120,7 +118,7 @@ h6 {
     transition: 0.5s ease-in-out;
 }
 
-.opcoes-cardapio div:hover{
+.opcoes-cardapio div:hover {
     color: rgb(246, 55, 12);
     cursor: pointer;
 }
@@ -139,7 +137,7 @@ h6 {
     color: red;
 }
 
-.opcoes-cardapio .selected::after{
+.opcoes-cardapio .selected::after {
     content: " ";
     width: 100%;
     height: 3px;
@@ -150,18 +148,18 @@ h6 {
     transition: 0.5s ease-in-out;
 }
 
-.section{
+.section {
     display: none;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.section img{
+.section img {
     width: 40%;
 }
 
-.card{
+.card {
     width: 26%;
     text-align: center;
     align-items: center;
@@ -169,18 +167,18 @@ h6 {
     margin-bottom: 3%;
 }
 
-.card img{
-    width: 100% ;
+.card img {
+    width: 100%;
     margin: auto;
     filter: drop-shadow(10px 7px 10px black);
 }
 
-.nome{
+.nome {
     font-size: 20px !important;
     font-weight: bold
 }
 
-.card p{
+.card p {
     font-size: 12px;
     margin: 0;
 }
@@ -191,7 +189,7 @@ h6 {
     text-align: center;
 }
 
-.dias-semana{
+.dias-semana {
     display: flex;
     width: 70%;
     margin: auto;
@@ -200,7 +198,7 @@ h6 {
     margin-bottom: 20px;
 }
 
-.dias-semana div{
+.dias-semana div {
     display: flex;
     width: 13%;
     height: 50px;
@@ -209,7 +207,7 @@ h6 {
     position: relative;
 }
 
-.dias-semana div::after{
+.dias-semana div::after {
     content: " ";
     width: 0%;
     height: 3px;
@@ -220,7 +218,7 @@ h6 {
     transition: 0.5s ease-in-out;
 }
 
-.dias-semana .selected::after{
+.dias-semana .selected::after {
     content: " ";
     width: 100%;
     height: 3px;
@@ -230,19 +228,19 @@ h6 {
     left: 0;
 }
 
-.dias-semana div:hover{
+.dias-semana div:hover {
     color: rgb(246, 55, 12);
     cursor: pointer;
 }
 
 
-.desc{
+.desc {
     width: 60%;
     text-align: justify;
     padding: 25px;
 }
 
-footer{
+footer {
     margin-top: 50px;
     text-align: center;
     border-top: 10px solid rgb(106, 5, 5);
@@ -250,23 +248,24 @@ footer{
     color: white;
 }
 
-footer .logo{
-    margin: auto;
+footer .logo {
+    width: 100%;
+    margin: 0;
 }
 
-footer .logo h1{
+footer .logo h1 {
     font-size: 35px;
 }
 
-footer .logo img{
-    width: 60px;
+footer .logo img {
+    width: 60px
 }
 
-footer a{
+footer a {
     color: white;
 }
 
-#copyright{
+#copyright {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -275,7 +274,7 @@ footer a{
     margin: auto;
 }
 
-#copyright a{
+#copyright a {
     width: 15%;
     text-decoration: none;
     text-align: center;

@@ -1,0 +1,121 @@
+@media only screen and (max-width: 772px) {
+    .logo {
+        width: 10%;
+        margin: 0;
+    }
+
+    .navBar .logo h1 {
+        display: none;
+    }
+
+    .menu {
+        width: 90%;
+        margin: 0;
+    }
+
+    #day-promocao-area {
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    #day-promocao-area {
+        height: 400px;
+    }
+
+    #copyright a {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 652px) {
+    #cardapio {
+        width: 100%;
+    }
+
+    #promocoes {
+        width: 100%;
+    }
+
+    footer .logo img{
+        width: 40px;
+    }
+
+    footer .logo h1{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 555px) {
+    
+    #day-promocao-area {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #day-promocao-area{
+        background-size: 100%;
+    }
+
+    .opcoes-cardapio{
+        width: 100%;
+    }
+
+    .dias-semana{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 465px){
+    .card {
+        width: 100% !important;
+    }
+
+    .card img {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .navBar .logo {
+        width: 100%;
+    }
+
+    .navBar .logo h1 {
+        display: block;
+    }
+
+    .navBar .menu {
+        display: none;
+    }
+
+    #promocoes .section img {
+        width: 100%;
+    }
+
+    #promocoes .section .desc {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #day-promocao-area{
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 330px){
+    .opcoes-cardapio div{
+        width: 20%;
+    }
+    
+    .opcoes-cardapio *{
+        font-size: 10px;
+    }
+
+    .opcoes-cardapio .material-symbols-outlined{
+        font-size: 30px;
+    }
+}
