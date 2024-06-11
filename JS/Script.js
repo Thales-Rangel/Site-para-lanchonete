@@ -1,12 +1,12 @@
 date = new Date;
 
-promosURL = new Array("url(../img/Promo-Dom.jpeg)",
-    "url(../img/Promo-Seg.jpeg)",
-    "url(../img/Promo-Ter.jpeg)",
-    "url(../img/Promo-Quar.jpeg)",
-    "url(../img/Promo-Quin.jpeg)",
-    "url(../img/Promo-Sex.jpeg)",
-    "url(../img/Promo-Sab.jpeg)");
+promosURL = new Array("url(img/Promo-Dom.jpeg)",
+    "url(img/Promo-Seg.jpeg)",
+    "url(img/Promo-Ter.jpeg)",
+    "url(img/Promo-Quar.jpeg)",
+    "url(img/Promo-Quin.jpeg)",
+    "url(img/Promo-Sex.jpeg)",
+    "url(img/Promo-Sab.jpeg)");
 
 promosID = new Array("promo-Dom",
     "promo-Seg",
