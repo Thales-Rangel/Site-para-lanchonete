@@ -68,10 +68,12 @@ h6 {
     justify-content: right;
     margin-bottom: 30px;
     background-repeat: no-repeat;
-    background-size: 95%;
+    background-size: 100%;
     background-position: center;
-    width: 100%;
+    width: 95%;
+    margin: auto;
     height: 600px;
+    border-radius: 77px;
 }
 
 
@@ -233,6 +235,9 @@ h6 {
     cursor: pointer;
 }
 
+#promocoes .section img {
+    border-radius: 75px;
+}
 
 .desc {
     width: 60%;
